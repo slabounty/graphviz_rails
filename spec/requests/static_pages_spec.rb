@@ -2,59 +2,42 @@ require 'spec_helper'
 
 describe "StaticPages" do
   let(:base_title) { "Request for Information |" }
+
+  subject { page }
+
   describe "Home Page" do
-    it "has the content 'Request for Information'" do
-      visit '/static_pages/home'
-      page.should have_content('Request for Information')
+    before do
+      visit root_path
     end
 
-    it "should have the right title" do
-      visit '/static_pages/home'
-      page.should have_selector(
-        'title',
-        text: "#{base_title} Home")
-    end
+    it { should have_content('Request for Information') }
+    it { should have_selector('title', text: full_title('')) }
   end
 
   describe "Help Page" do
-    it "has the content 'Help'" do
-      visit '/static_pages/help'
-      page.should have_content('Help')
+    before do
+      visit help_path
     end
 
-    it "should have the right title" do
-      visit '/static_pages/help'
-      page.should have_selector(
-        'title',
-        text: "#{base_title} Help")
-    end
+    it { should have_content('Help') }
+    it { should have_selector('title', text: full_title('Help')) }
   end
 
   describe "About Page" do
-    it "has the content 'About'" do
-      visit '/static_pages/about'
-      page.should have_content('About')
+    before do
+      visit about_path
     end
 
-    it "should have the right title" do
-      visit '/static_pages/about'
-      page.should have_selector(
-        'title',
-        text: "#{base_title} About")
-    end
+    it { should have_content('About')  }
+    it { should have_selector('title', text: full_title('About')) }
   end
 
   describe "Contact Page" do
-    it "has the content 'Contact'" do
-      visit '/static_pages/contact'
-      page.should have_content('Contact')
+    before do
+      visit contact_path
     end
 
-    it "should have the right title" do
-      visit '/static_pages/contact'
-      page.should have_selector(
-        'title',
-        text: "#{base_title} Contact")
-    end
+    it { should have_content('Contact') }
+    it { should have_selector( 'title', text: full_title('Contact')) }
   end
 end

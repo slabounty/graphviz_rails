@@ -1,0 +1,29 @@
+{
+  "RSpec": {
+    "coverage": {
+      "/home/slabounty/RailsTest/request_for_information/app/helpers/application_helper.rb": [
+        0,
+        null
+      ],
+      "/home/slabounty/RailsTest/request_for_information/app/helpers/static_pages_helper.rb": [
+        0,
+        null
+      ],
+      "/home/slabounty/RailsTest/request_for_information/app/helpers/users_helper.rb": [
+        0,
+        null
+      ],
+      "/home/slabounty/RailsTest/request_for_information/spec/support/utilities.rb": [
+        0,
+        0,
+        0,
+        0,
+        null,
+        0,
+        null,
+        null
+      ]
+    },
+    "timestamp": 1365908463
+  }
+}
