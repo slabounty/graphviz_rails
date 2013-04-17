@@ -23,7 +23,7 @@
       <img src="./assets/0.5.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" style="display:none;">
-      <div class="timestamp">Generated <abbr class="timeago" title="2013-04-15T19:35:47-07:00">2013-04-15T19:35:47-07:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2013-04-16T20:14:05-07:00">2013-04-16T20:14:05-07:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -41,9 +41,9 @@
   <a name="AllFiles"></a>
   <div>
     <b>4</b> files in total.
-    <b>8</b> relevant lines. 
+    <b>12</b> relevant lines. 
     <span class="green"><b>0</b> lines covered</span> and
-    <span class="red"><b>8</b> lines missed </span>
+    <span class="red"><b>12</b> lines missed </span>
   </div>
   <table class="file_list">
     <thead>
@@ -82,10 +82,10 @@
       <tr>
         <td class="strong"><a href="#c0e55e44a02b701f273d36fcaccabccd235080da" class="src_link" title="app/helpers/users_helper.rb">app/helpers/users_helper.rb</a></td>
         <td class="red strong">0.0 %</td>
-        <td>2</td>
-        <td>1</td>
+        <td>9</td>
+        <td>5</td>
         <td>0</td>
-        <td>1</td>
+        <td>5</td>
         <td>0.0</td>
       </tr>
       
@@ -180,9 +180,9 @@
     <h3>app/helpers/users_helper.rb</h3>
     <h4><span class="red">0.0 %</span> covered</h4>
     <div>
-      <b>1</b> relevant lines. 
+      <b>5</b> relevant lines. 
       <span class="green"><b>0</b> lines covered</span> and
-      <span class="red"><b>1</b> lines missed.</span>
+      <span class="red"><b>5</b> lines missed.</span>
     </div>
   </div>
   
@@ -196,6 +196,48 @@
         </li>
       
         <li class="never" data-hits="" data-linenumber="2">
+          
+          
+          <code class="ruby"></code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="3">
+          
+          
+          <code class="ruby">  # Returns the Gravatar (http://gravatar.com/) for the given user.</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="4">
+          
+          
+          <code class="ruby">  def gravatar_for(user)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="5">
+          
+          
+          <code class="ruby">    gravatar_id = Digest::MD5::hexdigest(user.email.downcase)</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="6">
+          
+          
+          <code class="ruby">    gravatar_url = &quot;https://secure.gravatar.com/avatar/#{gravatar_id}&quot;</code>
+        </li>
+      
+        <li class="missed" data-hits="0" data-linenumber="7">
+          
+          
+          <code class="ruby">    image_tag(gravatar_url, alt: user.name, class: &quot;gravatar&quot;)</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="8">
+          
+          
+          <code class="ruby">  end</code>
+        </li>
+      
+        <li class="never" data-hits="" data-linenumber="9">
           
           
           <code class="ruby">end</code>

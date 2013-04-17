@@ -11,6 +11,13 @@
       ],
       "/home/slabounty/RailsTest/request_for_information/app/helpers/users_helper.rb": [
         0,
+        null,
+        null,
+        0,
+        0,
+        0,
+        0,
+        null,
         null
       ],
       "/home/slabounty/RailsTest/request_for_information/spec/support/utilities.rb": [
@@ -24,6 +31,6 @@
         null
       ]
     },
-    "timestamp": 1366079747
+    "timestamp": 1366168445
   }
 }
