@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TMUX_SESSION_NAME="programmers_notebook"
+TMUX_SESSION_NAME="rails skeleton"
 
 # Get the fully qualified path to the directory holding this bash script
 PROJECT_DIR=$( cd $( dirname "${BASH_SOURCE[0]}" ) && pwd )
@@ -43,6 +43,9 @@ else
   # Create a new window inside the session called 'console' running 'rails c'.
   tmux new-window -t "${TMUX_SESSION_NAME}" -n console -d '${SHELL}'
   tmux send-keys -t "${TMUX_SESSION_NAME}:console" 'bundle exec rails c' C-m
+
+  # Create a new window inside the session called 'working' running 'a shell'.
+  tmux new-window -t "${TMUX_SESSION_NAME}" -n working -d '${SHELL}'
 
   # Attach the terminal to the session.
   tmux attach-session -d -t "${TMUX_SESSION_NAME}"

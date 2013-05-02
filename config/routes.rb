@@ -1,4 +1,4 @@
-RequestForInformation::Application.routes.draw do
+RailsSkeleton::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 

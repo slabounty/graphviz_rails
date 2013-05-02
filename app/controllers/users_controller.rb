@@ -19,7 +19,7 @@ class UsersController < ApplicationController
     @user = User.new(params[:user])
     if @user.save
       sign_in @user
-      flash[:success] = "Welcome to Request for Information!"
+      flash[:success] = "Welcome to Rails Skeleton!"
       redirect_to @user
     else
       render 'new'

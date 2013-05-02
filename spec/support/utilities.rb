@@ -1,5 +1,5 @@
 def full_title(page_title)
-  base_title = "Request for Information"
+  base_title = "Rails Skeleton"
   if page_title.empty?
     base_title
   else

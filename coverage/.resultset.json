@@ -1,14 +1,14 @@
 {
   "RSpec": {
     "coverage": {
-      "/home/slabounty/RailsTest/request_for_information/config/environment.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/environment.rb": [
         null,
         1,
         null,
         null,
         1
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/application.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/application.rb": [
         1,
         null,
         null,
@@ -78,7 +78,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/boot.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/boot.rb": [
         1,
         null,
         null,
@@ -86,7 +86,7 @@
         null,
         1
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/environments/test.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/environments/test.rb": [
         1,
         null,
         null,
@@ -131,7 +131,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/initializers/backtrace_silencers.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/initializers/backtrace_silencers.rb": [
         null,
         null,
         null,
@@ -140,7 +140,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/initializers/inflections.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/initializers/inflections.rb": [
         null,
         null,
         null,
@@ -157,14 +157,14 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/initializers/mime_types.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/initializers/mime_types.rb": [
         null,
         null,
         null,
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/initializers/secret_token.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/initializers/secret_token.rb": [
         null,
         null,
         null,
@@ -173,7 +173,7 @@
         null,
         1
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/initializers/session_store.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/initializers/session_store.rb": [
         null,
         null,
         1,
@@ -183,7 +183,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/initializers/wrap_parameters.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/initializers/wrap_parameters.rb": [
         null,
         null,
         null,
@@ -199,7 +199,7 @@
         1,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/controllers/application_controller.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/controllers/application_controller.rb": [
         1,
         1,
         1,
@@ -211,11 +211,11 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/helpers/application_helper.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/helpers/application_helper.rb": [
         1,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/helpers/sessions_helper.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/helpers/sessions_helper.rb": [
         1,
         null,
         1,
@@ -254,11 +254,11 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/helpers/static_pages_helper.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/helpers/static_pages_helper.rb": [
         1,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/helpers/users_helper.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/helpers/users_helper.rb": [
         1,
         null,
         null,
@@ -269,7 +269,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/controllers/sessions_controller.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/controllers/sessions_controller.rb": [
         1,
         1,
         null,
@@ -292,7 +292,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/controllers/static_pages_controller.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/controllers/static_pages_controller.rb": [
         1,
         1,
         null,
@@ -307,7 +307,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/controllers/users_controller.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/controllers/users_controller.rb": [
         1,
         1,
         1,
@@ -374,7 +374,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/app/models/user.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/app/models/user.rb": [
         null,
         null,
         null,
@@ -409,7 +409,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/spec/factories.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/spec/factories.rb": [
         1,
         1,
         69,
@@ -423,7 +423,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/config/routes.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/config/routes.rb": [
         1,
         1,
         1,
@@ -496,7 +496,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/spec/support/utilities.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/spec/support/utilities.rb": [
         1,
         6,
         6,
@@ -515,7 +515,7 @@
         30,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/spec/requests/authentication_pages_spec.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/spec/requests/authentication_pages_spec.rb": [
         1,
         null,
         1,
@@ -631,7 +631,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/spec/requests/static_pages_spec.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/spec/requests/static_pages_spec.rb": [
         1,
         null,
         1,
@@ -676,7 +676,7 @@
         null,
         null
       ],
-      "/home/slabounty/RailsTest/request_for_information/spec/models/user_spec.rb": [
+      "/home/slabounty/RailsTest/Rails-Skeleton/spec/models/user_spec.rb": [
         null,
         null,
         null,
@@ -806,6 +806,6 @@
         null
       ]
     },
-    "timestamp": 1367508680
+    "timestamp": 1367538096
   }
 }

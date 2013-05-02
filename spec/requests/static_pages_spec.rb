@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "StaticPages" do
-  let(:base_title) { "Request for Information |" }
+  let(:base_title) { "Rails Skeleton |" }
 
   subject { page }
 
@@ -10,7 +10,7 @@ describe "StaticPages" do
       visit root_path
     end
 
-    it { should have_content('Request for Information') }
+    it { should have_content('Rails Skeleton') }
     it { should have_selector('title', text: full_title('')) }
   end
 

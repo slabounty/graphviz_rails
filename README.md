@@ -8,3 +8,11 @@ and pry that I like.
 It will get a Rails project started quickly with sign up, login, users, admin,
 etc.
 by Scott LaBounty
+
+## Install
+git clone git@github.com:slabounty/Rails-Skeleton.git
+cd Rails-Skeleton
+bundle install --no-production
+bundle exec rake db:migrate
+bundle exec rake db:test:prepare
+bundle exec rspec spec/
