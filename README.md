@@ -1,18 +1,14 @@
-# Rails Skeleton
+# Graphviz Rails
 
-This is a rails skelton project.
-It is essentially the first 9 chapters of the Rails Tutorial
-by Michael Hartl. It includes a couple of additional gems such as rcov 
-and pry that I like. 
+This project will allow a user to input a graphviz dot file and then see
+the result and be able to download it easily.
 
-It will get a Rails project started quickly with sign up, login, users, admin,
-etc.
 by Scott LaBounty
 
 ## Install
-git clone git@github.com:slabounty/Rails-Skeleton.git
-cd Rails-Skeleton
-bundle install --no-production
-bundle exec rake db:migrate
-bundle exec rake db:test:prepare
-bundle exec rspec spec/
+    git clone git@github.com:slabounty/graphviz_rails.git
+    cd graphviz_rails
+    bundle install --without production
+    bundle exec rake db:migrate
+    bundle exec rake db:test:prepare
+    bundle exec rspec spec/
