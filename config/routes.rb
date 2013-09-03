@@ -1,4 +1,4 @@
-RailsSkeleton::Application.routes.draw do
+GraphVizRails::Application.routes.draw do
   resources :users
   resources :sessions, only: [:new, :create, :destroy]
 

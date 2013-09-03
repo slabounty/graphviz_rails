@@ -1,6 +1,6 @@
 #!/bin/bash
 
-TMUX_SESSION_NAME="rails skeleton"
+TMUX_SESSION_NAME="GraphViz Rails"
 
 # Get the fully qualified path to the directory holding this bash script
 PROJECT_DIR=$( cd $( dirname "${BASH_SOURCE[0]}" ) && pwd )

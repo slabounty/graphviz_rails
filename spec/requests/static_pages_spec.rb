@@ -1,7 +1,7 @@
 require 'spec_helper'
 
 describe "StaticPages" do
-  let(:base_title) { "Rails Skeleton |" }
+  let(:base_title) { "GraphViz Rails |" }
 
   subject { page }
 
@@ -10,7 +10,7 @@ describe "StaticPages" do
       visit root_path
     end
 
-    it { should have_content('Rails Skeleton') }
+    it { should have_content('GraphViz Rails') }
     it { should have_selector('title', text: full_title('')) }
   end
 

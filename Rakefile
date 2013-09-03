@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-RailsSkeleton::Application.load_tasks
+GraphVizRails::Application.load_tasks
