@@ -15,6 +15,17 @@ namespace :db do
                    password: password,
                    password_confirmation: password)
     end
+
+    users = User.all(limit: 6)
+    50.times do
+      w1, w2 = Faker::Lorem.words(2)
+      graph_code = <<-EOG
+        digraph G {
+          #{w1.capitalize}->#{w2.capitalize} [ label = "#{w1} #{w2}" ]; 
+        }
+      EOG
+      users.each { |user| user.graphs.create!(graph_code: graph_code) }
+    end
   end
 end
 

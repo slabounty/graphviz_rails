@@ -9,4 +9,9 @@ FactoryGirl.define do
       admin true
     end
   end
+
+  factory :graph do
+    graph_code "Lorem ipsum"
+    user
+  end
 end

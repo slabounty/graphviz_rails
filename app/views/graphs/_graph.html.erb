@@ -1,0 +1,13 @@
+<li>
+  <div class="graph_code">
+    <pre><code><%= graph.graph_code %></code></pre>
+  </div>
+  <span class="timestamp">
+    Posted <%= time_ago_in_words(graph.created_at) %> ago.
+  </span>
+  <% if current_user?(graph.user) %>
+    <%= link_to "delete", graph, method: :delete,
+                                     data: { confirm: "You sure?" },
+                                     title: graph.graph_code %>
+  <% end %>
+</li>

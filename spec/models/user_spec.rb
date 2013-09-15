@@ -24,6 +24,8 @@ describe User do
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:remember_token) }
   it { should respond_to(:admin) }
+  it { should respond_to(:graphs) }
+  it { should respond_to(:feed) }
   it { should respond_to(:authenticate) }
 
   it { should be_valid }
@@ -123,5 +125,39 @@ describe User do
   describe "remember token" do
     before { @user.save }
     its(:remember_token) { should_not be_blank }
+  end
+
+  describe "graph associations" do
+
+    before { @user.save }
+    let!(:older_graph) do
+      FactoryGirl.create(:graph, user: @user, created_at: 1.day.ago)
+    end
+    let!(:newer_graph) do
+      FactoryGirl.create(:graph, user: @user, created_at: 1.hour.ago)
+    end
+
+    it "should have the right graphs in the right order" do
+      expect(@user.graphs.to_a).to eq [newer_graph, older_graph]
+    end
+
+    it "should destroy associated graphs" do
+      graphs = @user.graphs.to_a
+      @user.destroy
+      expect(graphs).not_to be_empty
+      graphs.each do |graph|
+        expect(Graph.where(id: graph.id)).to be_empty
+      end
+    end
+
+    describe "status" do
+      let(:other_user_graph) do
+        FactoryGirl.create(:graph, user: FactoryGirl.create(:user))
+      end
+
+      its(:feed) { should include(newer_graph) }
+      its(:feed) { should include(older_graph) }
+      its(:feed) { should_not include(other_user_graph) }
+    end
   end
 end
